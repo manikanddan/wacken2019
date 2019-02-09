@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'the dark';
+    src: url('thedark.eot');
+    src: url('thedark.eot?#iefix') format('embedded-opentype'),
+        url('thedark.woff2') format('woff2'),
+        url('thedark.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Google spies';
+    src: url('Google-spies.eot');
+    src: url('Google-spies.eot?#iefix') format('embedded-opentype'),
+        url('Google-spies.woff2') format('woff2'),
+        url('Google-spies.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

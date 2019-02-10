@@ -51,6 +51,9 @@
           <li data-menuanchor="eighthSection">
             <a href="#eighthSection" title="Eighth Section">Eighth Section</a>
           </li>
+          <li data-menuanchor="ninthSection">
+            <a href="#ninthSection" title="Ninth Section">Ninth Section</a>
+          </li>
           
         </ul>
       </nav>
@@ -173,48 +176,108 @@
 
       <section class="vertical-scrolling" style="background-image: linear-gradient(to bottom, #000000, #050404, #090808, #0d0c0c, #10100f);">
       
+          <table class="image-table">
+            <tbody>
+              <tr>
+                <td>
+                  <img src="img/basti.JPG" alt="Bild1" title="Bild1">
+                </td>
+                <td>
+                  <img src="img/josh.JPG" alt="Bild2" title="Bild2">
+                </td>
+                <td>
+                  <img src="img/manik.JPG" alt="Bild3" title="Bild3">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="img/maxi.JPG" alt="Bild4" title="Bild4">
+                </td>
+                <td>
+                  <img src="img/mio.JPG" alt="Bild5" title="Bild5">
+                </td>
+                <td>
+                  <img src="img/yannik.JPG" alt="Bild6" title="Bild6">
+                </td>
+              </tr>
+              <tr>
+                <td><canvas id="canvas" style="position: absolute; z-index: 200;"></canvas></td>
+                <td><canvas id="canvas" style="position: absolute; z-index: 200;"></canvas></td>
+                <td><canvas id="canvas" style="position: absolute; z-index: 200;"></canvas></td>
+                <script src="js/smoke.js"></script>
+                <script>
+                  var canvas = document.getElementById('canvas')
+                  var ctx = canvas.getContext('2d')
+                  canvas.width = innerWidth
+                  canvas.height = innerHeight
 
-        
-        
+                  var party = smokemachine(ctx, [18, 16, 54])
+                  party.start() // start animating
+                  party.setPreDrawCallback(function (dt) {
+                    party.addSmoke(innerWidth / 2, innerHeight, .5)
+                    canvas.width = innerWidth
+                    canvas.height = innerHeight
+                  })
 
+                  // party.addsmoke(innerWidth/2, innerHeight, 100)
+                  // onclick=e => {
+                  // 	console.log(e)
+                  // 	party.step()
+                  // }
 
-        <canvas id="canvas" style="float: left;"></canvas>
-        <script src="js/smoke.js"></script>
-        <script>
-          var canvas = document.getElementById('canvas')
-          var ctx = canvas.getContext('2d')
-          canvas.width = innerWidth
-          canvas.height = innerHeight
+                  onmousemove = function (e) {
+                    var x = e.clientX
+                    var y = e.clientY
+                    var n = .5
+                    var t = Math.floor(Math.random() * 200) + 3800
+                    party.addsmoke(x, y, n, t)
+                  }
 
-          var party = smokemachine(ctx, [18, 16, 54])
-          party.start() // start animating
-          party.setPreDrawCallback(function (dt) {
-            party.addSmoke(innerWidth / 2, innerHeight, .5)
-            canvas.width = innerWidth
-            canvas.height = innerHeight
-          })
+                </script>
 
-          // party.addsmoke(innerWidth/2, innerHeight, 100)
-          // onclick=e => {
-          // 	console.log(e)
-          // 	party.step()
-          // }
+              </tr>
+            </tbody>
+          </table>
 
-          onmousemove = function (e) {
-            var x = e.clientX
-            var y = e.clientY
-            var n = .5
-            var t = Math.floor(Math.random() * 200) + 3800
-            party.addsmoke(x, y, n, t)
-          }
-
-        </script>
-
-
-
-          
 
       </section>
+
+      <section class="vertical-scrolling" style="background-image: linear-gradient(to bottom, #000000, #050404, #090808, #0d0c0c, #10100f);">
+      
+      
+        
+      <table class="image-table">
+        <tbody>
+          <tr>
+            <td>
+              <img src="img/basti.JPG" alt="Bild1" title="Bild1">
+            </td>
+            <td>
+              <img src="img/josh.JPG" alt="Bild2" title="Bild2">
+            </td>
+            <td>
+              <img src="img/manik.JPG" alt="Bild3" title="Bild3">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="img/maxi.JPG" alt="Bild3" title="Bild3">
+            </td>
+            <td>
+              <img src="img/mio.JPG" alt="Bild3" title="Bild3">
+            </td>
+            <td>
+              <img src="img/yannik.JPG" alt="Bild3" title="Bild3">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+        
+
+      </section>
+
+
     </div>
  
     <!-- js files -->

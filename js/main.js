@@ -22,25 +22,25 @@ $(document).ready(function(){
     slidesNavigation: true,
     css3: true,
     controlArrows: false,
-    anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection', 'sixthSection', 'seventhSection','eighthSection'],
+    anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection', 'sixthSection', 'seventhSection', 'eighthSection', 'ninthSection'],
     menu: '#menu',
 
     afterLoad: function(anchorLink, index) {
       $header_top.css('background', 'rgba(0, 0, 0, 1)');
       $nav.css('background', 'rgba(0, 0, 0, 1)');
-      if (index == 8) {
+      if (index == 9) {
           $('#fp-nav').hide();
         }
     },
 
     onLeave: function(index, nextIndex, direction) {
-      if(index == 8) {
+      if(index == 9) {
         $('#fp-nav').show();
       }
     },
 
     afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex) {
-      if(anchorLink == 'eighthSection' && slideIndex == 1) {
+      if(anchorLink == 'ninthSection' && slideIndex == 1) {
         $.fn.fullpage.setAllowScrolling(false, 'up');
         $header_top.css('background', 'transparent');
         $nav.css('background', 'transparent');
@@ -58,7 +58,7 @@ $(document).ready(function(){
     },
 
     onSlideLeave: function( anchorLink, index, slideIndex, direction) {
-      if(anchorLink == 'eighthSection' && slideIndex == 1) {
+      if(anchorLink == 'ninthSection' && slideIndex == 1) {
         $.fn.fullpage.setAllowScrolling(true, 'up');
         $header_top.css('background', 'rgba(0, 47, 77, .3)');
         $nav.css('background', 'rgba(0, 47, 77, .25)');

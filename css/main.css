@@ -218,8 +218,8 @@ h1 a {
 nav {
  	height: 0;
 	opacity: 0;
-  box-sizing: border-box;
-	background: rgba(0, 47, 77, .25);
+  	box-sizing: border-box;
+	background: #aa3346;
 	position: fixed;
 	top: 70px;
 	width: 100%;
@@ -360,10 +360,12 @@ h3 {
   
   .open-menu ~ nav {
 		padding: 20px 0;
+	
 	}
 
 	nav li a {
 		padding: 3px;
+		
 	}
 	span {
 		font-size: 50%;

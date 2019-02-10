@@ -51,9 +51,7 @@
           <li data-menuanchor="eighthSection">
             <a href="#eighthSection" title="Eighth Section">Eighth Section</a>
           </li>
-          <li data-menuanchor="ninthSection">
-            <a href="#ninthSection" title="Ninth Section">Ninth Section</a>
-          </li>
+         
           
         </ul>
       </nav>
@@ -214,52 +212,8 @@
             </tr>
           </tbody>
         </table>
-        
-        
-        </section>
-
-          <canvas id="canvas" style="position: absolute; z-index: 200; justify-content: center; margin-right: 100%;"></canvas>
-        
-          <script src="js/smoke.js"></script>
-          <script>
-            var canvas = document.getElementById('canvas')
-            var ctx = canvas.getContext('2d')
-            canvas.width = innerWidth
-            canvas.height = innerHeight
-
-            var party = smokemachine(ctx, [18, 16, 54])
-            party.start() // start animating
-            party.setPreDrawCallback(function (dt) {
-              party.addSmoke(innerWidth / 2, innerHeight, .5)
-              canvas.width = innerWidth
-              canvas.height = innerHeight
-            })
-
-            // party.addsmoke(innerWidth/2, innerHeight, 100)
-            // onclick=e => {
-            // 	console.log(e)
-            // 	party.step()
-            // }
-
-            onmousemove = function (e) {
-              var x = e.clientX
-              var y = e.clientY
-              var n = .5
-              var t = Math.floor(Math.random() * 200) + 3800
-              party.addsmoke(x, y, n, t)
-            }
-
-          </script>
 
       </section>
-
-      <section class="vertical-scrolling" style="background-image: linear-gradient(to bottom, #000000, #050404, #090808, #0d0c0c, #10100f);">
-      
-      
-        
-      
-
-
     </div>
  
     <!-- js files -->

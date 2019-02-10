@@ -22,7 +22,7 @@ $(document).ready(function(){
     slidesNavigation: true,
     css3: true,
     controlArrows: false,
-    anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection', 'sixthSection', 'seventhSection', 'eighthSection', 'ninthSection'],
+    anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection', 'sixthSection', 'seventhSection', 'eighthSection'],
     menu: '#menu',
 
     afterLoad: function(anchorLink, index) {
@@ -40,7 +40,7 @@ $(document).ready(function(){
     },
 
     afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex) {
-      if(anchorLink == 'ninthSection' && slideIndex == 1) {
+      if(anchorLink == 'eighthSection' && slideIndex == 1) {
         $.fn.fullpage.setAllowScrolling(false, 'up');
         $header_top.css('background', 'transparent');
         $nav.css('background', 'transparent');
@@ -58,7 +58,7 @@ $(document).ready(function(){
     },
 
     onSlideLeave: function( anchorLink, index, slideIndex, direction) {
-      if(anchorLink == 'ninthSection' && slideIndex == 1) {
+      if(anchorLink == 'eighthSection' && slideIndex == 1) {
         $.fn.fullpage.setAllowScrolling(true, 'up');
         $header_top.css('background', 'rgba(0, 47, 77, .3)');
         $nav.css('background', 'rgba(0, 47, 77, .25)');

@@ -245,16 +245,17 @@ nav li {
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
 	    -ms-flex: 1;
-	        flex: 1;
+			flex: 1;
+		
 }
 
 nav li a {
-	font-size: 2em;
+	font-size: 1.5em;
 	display: block;
 	padding: 30px;
 	text-align: center;
-	-webkit-transition: background .3s;
-	        transition: background .3s;
+	-webkit-transition: background .2s;
+	        transition: background .2s;
 }
 
 nav li:nth-child(odd) a,

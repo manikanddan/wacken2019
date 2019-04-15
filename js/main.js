@@ -58,7 +58,7 @@ $(document).ready(function(){
     },
 
     onSlideLeave: function( anchorLink, index, slideIndex, direction) {
-      if(anchorLink == 'eighthSection' && slideIndex == 1) {
+      if(anchorLink == 'twelthSection' && slideIndex == 1) {
         $.fn.fullpage.setAllowScrolling(true, 'up');
         $header_top.css('background', 'rgba(0, 47, 77, .3)');
         $nav.css('background', 'rgba(0, 47, 77, .25)');

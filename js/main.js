@@ -40,7 +40,7 @@ $(document).ready(function(){
     },
 
     afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex) {
-      if(anchorLink == 'eighthSection' && slideIndex == 1) {
+      if(anchorLink == 'twelthSection' && slideIndex == 1) {
         $.fn.fullpage.setAllowScrolling(false, 'up');
         $header_top.css('background', 'transparent');
         $nav.css('background', 'transparent');

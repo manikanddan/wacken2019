@@ -22,19 +22,19 @@ $(document).ready(function(){
     slidesNavigation: true,
     css3: true,
     controlArrows: false,
-    anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection', 'sixthSection', 'seventhSection', 'eighthSection'],
+    anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection', 'sixthSection', 'seventhSection', 'eighthSection', 'ninthSection', 'tenthSection', 'eleventhSection', 'twelthSection'],
     menu: '#menu',
 
     afterLoad: function(anchorLink, index) {
       $header_top.css('background', 'rgba(0, 0, 0, 1)');
       $nav.css('background', 'rgba(0, 0, 0, 1)');
-      if (index == 9) {
+      if (index == 13) {
           $('#fp-nav').hide();
         }
     },
 
     onLeave: function(index, nextIndex, direction) {
-      if(index == 9) {
+      if(index == 13) {
         $('#fp-nav').show();
       }
     },
